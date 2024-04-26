@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+h1{
+    font-size: 60px;
+    font-style: medium;
+}
+h2{
+    font-size: 40px;
+    font-style: regular;
+}
+h3{
+    font-size: 35px;
+
+}
+h4{
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+}
+
+.header{
+    background-color: #F2F2F2;
+    padding: 20px;
+    position:sticky;
+
+    .menuHeader{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: #BFB3A3;
+
+        .itMenuHeader{
+            list-style: none;
+            display:flex;
+            column-gap: 20px;
+        }
+    }
+}
+
+
+.footer{
+    background-color: #426A4C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #BFB3A3;
+    padding: 20px;
+
+    .menuFooter ul li{
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+.sectionPrincipal{
+    background-image: linear-gradient(to bottom, #000000ad, #000000ad ), url("../assets/img/fondoPrincipal.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
+    height: 90vh;
+    color: #F8F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2, h1{
+        padding: 0% 5%;
+    }
+
+}
+.somos{
+    background-color: #A3BFAA;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
+    color: #F8F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-bottom: 0;
+    flex-wrap: wrap;
+    h3, p{
+
+        padding: 2% 10%;
+    }
+    .videoYoutube{
+        padding: 20px 10px;
+    }
+}
+.articleVoluntarios{
+    background-image: linear-gradient(to bottom, #000000ad, #000000ad ), url("../assets/img/voluntarios.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 70vh;
+    color: #F8F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.ultimosRescatados{
+    background-color: #A3BFAA;
+    padding: 0;
+    margin:0;
+    text-align: center;
+    h2{
+        font-size: 40px;
+        padding: 10px;
+        padding-top: 50px;
+    }
+    .galeriaRescatados{
+        display:flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding-bottom: 70px;
+        .urescatados{
+            width: 250px;
+            height: 350px;
+            border-radius: 30px;
+            margin: 20px;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+    .somos{
+        
+        .videoYoutube{
+            width: 90%;
+            padding: 5%;
+        }
+    }
+    
+}
